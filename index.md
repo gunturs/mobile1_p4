@@ -52,3 +52,23 @@ class Haldua extends StatelessWidget {
   }
 }
 ```
+
+dalam class Halutama terdapat sebuah Iconbutton yang nantinya bertujuan sebagai triger untuk menuju halaman selanjutnya,, jika diclick maka even onPressed yany terdapat pada tombol akan mengakses route dari class yang dituju dalam contoh, setelah duah class tersebut di buat maka kita atur route nya pada maerialApp seperti progra dibawah ini.
+
+```dart
+
+void main() {
+  runApp(new MaterialApp(
+    debugShowCheckedModeBanner: false,
+    home: new Halutama(),
+    
+    title: 'Navigasi',
+    
+    //Atur route
+    routes: <String, WidgetBuilder>{
+      '/Halutama': (BuildContext context) => new Halutama(),
+      '/Haldua': (BuildContext context) => new Haldua(),
+    },
+  ));
+}
+```
