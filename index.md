@@ -33,19 +33,21 @@ class Halutama extends StatelessWidget {
 
 Class:Haldua
 
+Class: Halutama
 ```dart
-class Haldua extends StatelessWidget {
+class Halutama extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: AppBar(
-        title: Text('Navigasi'),
+        leading:IconButton(color:Colors.white,icon: Icon(IconData(59530, fontFamily: 'MaterialIcons')),onPressed:null,),
+        title: Text('Home'),
       ),
       body: new Center(
         child: new Container(
           child: new IconButton(
-            icon: Icon(Icons.place, size: 40.0),
-            onPressed: null,
+            icon: Icon(IconData(58128, fontFamily: 'MaterialIcons'),size:30.00,color:Colors.orangeAccent),
+            onPressed: () {   },
           ),
         ),
       ),
@@ -53,6 +55,4 @@ class Haldua extends StatelessWidget {
   }
 }
 
-
 ```
-
