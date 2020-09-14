@@ -72,3 +72,11 @@ void main() {
   ));
 }
 ```
+pada program diatas telah disetting bahwa untuk class pertama diberi root '/Halutama' dan class kedua '/Haldua, selanjutnya tinggal tambahkan pemanggil pada masing masing tombol dalam class
+Class hal utama
+```dart
+onPressed: () {
+              Navigator.pushNamed(context, '/Haldua');
+            },
+
+```
